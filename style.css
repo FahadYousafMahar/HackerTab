@@ -1,0 +1,201 @@
+@font-face {
+    font-family: 'Urdu';
+    src:url('chrome-extension://__MSG_@@extension_id__/css/Mehr.ttf');
+    /* Mehr Nastalique Font - Courtesy of ITU Center for Speach And Lanuage Technologies - csalt.itu.edu.pk */
+    unicode-range: U+0600-06FF;
+}
+body {
+    -webkit-animation: animate_bg 5s;
+    animation: animate_bg 5s;
+    -webkit-animation-iteration-count: infinite;
+      -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+    animation-iteration-count: infinite;
+      animation-direction: alternate;
+
+}
+
+@keyframes animate_bg {
+    0%   {background:rgb(71, 46, 50);}
+    50%  {background:rgb(46, 48, 71);}
+    100% {background:rgb(46, 71, 51);}
+}
+
+.help {
+    display:none;
+    bottom:10%;
+    width: 50%;
+    position: fixed;
+    left: 50%;
+    margin-left:-25%;
+    background:
+linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+background-color: #131313;
+background-size: 20px 20px;
+    box-shadow:0px 0px 0px;
+    border-bottom: 5px solid #ffffff;
+    padding:20px;
+    z-index:99;
+    align:middle;
+    font-size: 20px;
+}
+.help>.btn-help {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  color: #F00;
+  background: #FAFAFA;
+  border: 0px;
+  padding: 5px;
+}
+/* Btn above  */
+a{
+  color:#ffffff;
+}
+.image{
+      margin-right: 33%;
+}
+.container-1{
+  width: 100%;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+  margin-right:10px;
+}
+.font1{
+  color:#ffffff;
+  cursor:pointer;
+  font-family:'Rajdhani',Arial;
+  font-style:Bold;
+}
+.black {
+width:100%;
+}
+.container-1 input#search{
+  font-family: "Rajdhani", "Lucida Sans Unicode",sans-serif;
+  padding:32px;
+  direction:ltr;
+  width: 100%;
+  height: 50px;
+  background: #2b303b;
+  border: none;
+  font-size: 15pt;
+  float: left;
+  color: #63717f;
+  padding-left: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 100px 0px;
+}
+.container-1 input#search::-webkit-input-placeholder {
+   color: #65737e;
+}
+ 
+.container-1 input#search:-moz-placeholder { /* Firefox 18- */
+   color: #65737e;  
+}
+ 
+.container-1 input#search::-moz-placeholder {  /* Firefox 19+ */
+   color: #65737e;  
+}
+ 
+.container-1 input#search:-ms-input-placeholder {  
+   color: #65737e;  
+}
+.container-1 .icon{
+  position: absolute;
+  top: 10%;
+  margin-right: 15px;
+  margin-top: 15px;
+  z-index: 1;
+  color: #4f5b66;
+}
+.container-1 input#search:hover, .container-1 input#search:focus, .container-1 input#search:active{
+    background: #ffffff;
+  }
+@font-face {
+    font-family: 'Urdu';
+    src: url('NafeesNastaleeq.ttf');}
+
+input[type=button], input[type=submit], input[type=reset] {
+    margin-right: 10px;
+    margin-bottom: 40px;
+    background-color: #4CAF50;
+    border-right: 10px solid #29752c;
+    font-family: "Lucida Sans", "Lucida Sans Unicode",sans-serif;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 0px 10px;
+    cursor: pointer;
+     width: 100%;
+     border-radius: 100px 0px;
+
+}
+p{
+  padding-left:40px;
+  direction:rtl;
+  color:black;
+  font-size:30px;
+  font-family:'Jameel Noori Nastaleeq','Urdu';
+  font-weight:400;
+}
+h2{
+  padding-right:50px;
+  direction:rtl;
+  color:black;
+  font-size:40px;
+  font-family:'Jameel Noori Nastaleeq','Urdu';
+  font-weight:400;
+}
+body{
+  direction:rtl;
+  background-color:rgb(71, 46, 50);
+  color:black;
+  font-size:20px;
+  font-family:'Jameel Noori Nastaleeq','Urdu';
+  font-weight:400;
+}
+i{
+  padding-right:10px;
+}
+#box{
+  background-color:white;
+  margin-top:10%;
+  margin-left:22%;
+  margin-right:22%;
+  border-radius:100px 20px;
+  border-top: solid 10px #a94442;
+  border-bottom: solid 10px #ba8557;
+
+}
+.my-btn{
+    background: rgb(71, 46, 50);
+    color: #fff;
+    font-family: Sans-serif;
+    height: 40px;
+    width: 120px;
+    margin: 25px 25px;
+    text-align: center;
+    border: 0;
+    border-radius:5px;
+    transition: all 0.3s ease 0s;
+}
+button:hover {
+  background: #3071A9
+}
+#author-box{
+  text-align:left;
+  padding-left:20px;
+  margin-top:20px;
+  font-size:18px;
+  font-style:normal;
+}
+#qoute{
+  text-align:center;
+  margin-left:5px;
+}

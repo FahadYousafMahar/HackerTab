@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>Hacker Tab | For Every Aspiring Hacker</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="title" content="Hacker Tab| For Every Aspiring Hacker">
+    <meta name="description" content="Startpage, Homepage, All-in-One Web Portal For The Tech Savvy Who Love Website Development, Network Security, Streams, Downloads, Links & More">
+    <meta name="keywords" content="stalkers security, stalkers.pk, webit.pk, startpage, homepage, geeks, netsec, webdev, web development, website development, web design, website design, graphic design, graphics, downloads, streaming, streaming video, free streaming, free downloads, no ads, no tracking, no logs, vpn, cryptocurreny, bitcoin, cryptocurrencies, crypto, alternative, weboasis, web oasis, weboas.is, portal, web portal, free">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/perfect-scrollbar.min.css" />
+    <link rel="stylesheet" type="text/css" href="js/noty/noty.css" />
+    <link rel="stylesheet" type="text/css" href="js/noty/metroui.css" />
+	<link rel="stylesheet" type="text/css" href="autocomplete/index.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <meta name=viewport content="width=device-width, initial-scale=0.65, user-scalable=no" />
+    <noscript>Javascript Needed For Page!</noscript>
+    <script defer type="application/javascript" src="js/jquery.js"></script>
+    <script defer type="application/javascript" src="js/perfect-scrollbar.min.js"></script>
+    <script defer type="application/javascript" src="js/platform.min.js"></script>
+    <script defer type="application/javascript" src="js/script.min.js"></script>
+    <script defer type="application/javascript" src="js/custom.min.js"></script>
+    <script defer type="application/javascript" src="js/sortable.min.js"></script>
+    <script defer type="application/javascript" src="js/jscolor.min.js"></script>
+    <script defer type="application/javascript" src="js/canvas/matrix.js"></script>
+    <script defer type="application/javascript" src="js/fast.min.js"></script>
+	<script defer type="application/javascript" src="autocomplete/index.js"></script>
+	<script defer type="application/javascript" src="js/def-settings-reloader.js"></script>
+</head>
+<body id="body">
+    <div class="background" id="canvasContainer"></div>
+    <div id="mySidenav" class="sidenav">
+        <a href="" class="closebtn" id="closebutton">&times;</a>
+        <menu>
+            <a href="https://stalkers.pk">Stalkers Security</a>
+            <a href="https://stalkers.pk/blog">Stalkers' Blog</a>
+            <a href="https://webit.pk">WebIT.pk</a>
+        </menu><hr>
+        <div id="customcontainer" style="display:none;">
+            <div id="customlinks">
+                <ul id="favorite-links"></ul>
+                <div id="new-link-button">
+                    <button id="add-link-btn">Add New Links</button>
+                </div>
+            </div>
+            <div id="add-link-form">
+                <input type="text" id="title" maxlength="12" placeholder="Title" />
+                <input type="text" id="url" value="https://" />
+                <select id="menu-select"></select>
+                <button id="add">Save</button>
+            </div>
+            <div id="show-hide-customization">
+                <div id="checkbox-wrapper">
+                    <span class="checkbox">
+                        <input type="checkbox" id="customization-checkbox" name="customization-checkbox">
+                        <label for="customization-checkbox" id="customization-label">&nbsp;Hide Link Menu Icons</label>
+                    </span>
+                    <span class="checkbox">
+                        <input type="checkbox" id="oldReddit-checkbox" name="oldReddit-checkbox">
+                        <label for="oldReddit-checkbox" id="oldReddit-label">&nbsp;Use Old Reddit</label>
+                    </span>
+                    <span class="checkbox">
+                        <input type="checkbox" id="openNewTab-checkbox" name="openNewTab-checkbox">
+                        <label for="openNewTab-checkbox" id="openNewTab-label">&nbsp;Search In New Tab</label>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div id="resetToDefault">
+            <p class="btn hollow">Reset All To Default</p>
+        </div>
+        <div id="customSettings" style="display:none;">
+            <p id="toggleSettings" class="btn hollow">My Custom Settings</p>
+            <div id="settingsContainer">
+                <p id="exportSettings" class="btn hollow small">Export</p>
+                <label id="importLabel" for="importSettings" class="btn hollow small">Import</label>
+                <input type="file" id="importSettings" />
+            </div>
+        </div>
+        <div id="customMatrix" style="margin-top:10px;">Change Color 
+            <button id="colorPicker" class="btn hollow jscolor">
+                Change Matrix Color
+            </button>
+            <div id="pickerContainer"></div>
+            <p id="resetColor" class="btn hollow small active">Reset Color</p>
+        </div>
+        <div id="customAnimations">
+            <p id="customAnimationsBtn" class="btn hollow toggle">Change Animation</p>
+            <div id="customAnimationsList" class="animations">
+                <p id="stars" class="btn hollow small animationBtn">Stars</p>
+                <span id="trails" class="btn hollow small animationBtn">Trails</span>
+                <span id="matrix" class="btn hollow small reset animationBtn">Matrix</span>
+            </div>
+        </div>
+        <div id="customBackgrounds">
+            <p id="customBgBtnToggle" class="btn hollow toggle">Change Background</p>
+            <div id="customBackgroundsList" class="list">
+                <div id="thumbTemplate" class="thumb template"></div>
+            </div>
+            <div id="customBackgroundFileDiv">
+                <label for="customBackgroundFile" id="customBackgroundFileLabel" class="btn hollow small">Custom
+                    Background</label>
+                <input type="file" id="customBackgroundFile" name="customBackgroundFile">
+            </div>
+            <p id="resetBackgroundBtn" class="btn hollow small reset">Reset Background</p>
+        </div>
+        <div class="email" style="margin-top:25%;">
+            Developed by : <br> Fahad Yousaf Mahar
+		</div>
+    </div>
+    <div><span  id="leftsidemenu" class="sidenavhome">
+        <a id="sidenavhomea" href="javascript:void(0);">&#9776;</a></span>
+    </div>
+    <div class="weboasislogo" style="padding-top: 15px;"><img src="media/logo.png" alt="Logo"></div>
+    <div class="center-flex offset-25">
+        <div class="container" id="mainContainer">
+            <div class="container container-search" id="searchContainer">
+                <input autocomplete="off" tabindex="1" type="search" id="searchBar">
+            </div>
+            <div class="container container-help" id="searchHelp">
+                <ul class="help-list" id="searchHelpMenu"></ul>
+            </div>
+            <div class="container container-menu" id="menuContainer">
+                <ul onclick="javascript:void(0);" class="menu-category" id="categoryMenu"></ul>
+            </div>
+        </div>
+    </div>   
+    <div id="infoContainer" class="widget align-right">
+        <div id="dateContainer"></div>
+        <div id="systemInfoContainer"></div>
+    </div>
+    <div id="overlay"></div>
+    <div id="confirmModal" class="modal">
+        <a class="modal-close modal-cancel">x</a>
+        <p>Are you sure you want to delete <span id="modal-label"></span> ?</p>
+        <div id="modal-controls">
+            <button id="deleteLink" class="btn modal-btn">Delete</button>
+            <button id="cancelAction" class="btn modal-btn modal-cancel">Cancel</button>
+        </div>
+    </div>
+    <div></div>
+    <div id="secretMenu" class="modal">
+        <a class="modal-close modal-cancel">x</a>
+        <p>&nbsp;Secret Menu</p>
+    </div>
+    <script defer type="application/javascript" src="js/init.js"></script>
+</body>
+</html>
