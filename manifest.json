@@ -6,7 +6,7 @@
    "chrome_url_overrides": {
       "newtab": "index.html"
    },
-   "description": "A chrome extension that adds Customizable Hacker Themed Matrix and Hacker Themed Backgrounds on Chrome's New Tab Page with many Search Engines",
+   "description": "Customizable Hacker Themed New Tab For Chrome",
    "icons": {
       "16": "icons/icon16.png",
       "19": "icons/icon19.png",
