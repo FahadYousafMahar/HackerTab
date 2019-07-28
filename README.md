@@ -10,9 +10,11 @@ It adds the hacker look to your Chrome New Tab.
 
 ### Screenshots
 ![Video](./docs/video.gif)
+![1](./docs/1.png)
 ![2](./docs/2.png)
 ![3](./docs/3.png)
-![1](./docs/1.png)
+![4](./docs/4.png)
+![4](./docs/5.png)
 
 #### Search Engines available are :
 <ul>
