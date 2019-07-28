@@ -22,5 +22,7 @@ setTimeout(function() {
     $("#customMatrix").on('DOMSubtreeModified', "#colorPicker", function() {
         updateMatrixColor($('#colorPicker').html());
     });
-}, 3000);
-//window.location.reload();
+}, 1000);
+$('#ip').click(function(){
+    toggleShowIP()
+});
