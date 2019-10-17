@@ -2,7 +2,6 @@ document.getElementById("searchBar").addEventListener("focus", function(){addCla
 document.getElementById("searchBar").addEventListener("blur", function(){removeClass('mainContainer','input-active')});
 document.getElementById("searchBar").addEventListener("keydown", function(){handleQuery(event,this.value)});
 $('#customAnimationsBtn').click(function(e){
-    //e.preventDefault();
     toggleAnimations();
 });
 $('#closebutton').click(function(e){
@@ -13,11 +12,12 @@ $('#sidenavhomea').click(function(e){
     e.preventDefault();
     openNav();
 });
-$('#leftsidemenu').mouseover(function(){
-    openNav()
-});
 init();
-SetCookie("matrix-color", "#0C85D3", 31536000000);
+$( "#leftsidemenu" ).mousemove(function( event ) {
+    if(event.pageX<100){
+        openNav()
+    }
+});
 setTimeout(function() {
     $("#customMatrix").on('DOMSubtreeModified', "#colorPicker", function() {
         updateMatrixColor($('#colorPicker').html());

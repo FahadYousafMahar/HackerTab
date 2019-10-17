@@ -52,6 +52,5 @@
     ]
   },
  "content_security_policy": "script-src 'self'; object-src 'self'",
-"version": "1.0",
-"permissions":["https://raw.githubusercontent.com/FahadYousafMahar/UrduPoetryTab/master/json/db.json"]
+"version": "1.0"
 }
