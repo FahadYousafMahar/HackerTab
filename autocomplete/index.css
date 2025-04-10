@@ -13,8 +13,13 @@
 	overflow: hidden;
 	padding: 2px;
 	padding-left: 8px;
+	margin-bottom: 2px;
 }
-
+#autocomplete_datalist > option:focus , #autocomplete_datalist > option:hover {
+	margin-bottom: 0;
+	background-color: rgba(255,255,255,.30);
+	border-bottom: 2px solid white;
+}
 .settings-label{
 	cursor: pointer;
 }

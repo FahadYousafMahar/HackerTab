@@ -18,11 +18,25 @@ $( "#leftsidemenu" ).mousemove(function( event ) {
         openNav()
     }
 });
+const observerCallback = (mutationsList, observer) => {
+    // Loop through all mutations that occurred
+    for (let mutation of mutationsList) {
+        if (mutation.type === 'childList' || mutation.type === 'subtree') {
+            updateMatrixColor(colorPicker.innerHTML);
+        }
+    }
+};
 setTimeout(function() {
-    $("#customMatrix").on('DOMSubtreeModified', "#colorPicker", function() {
-        updateMatrixColor($('#colorPicker').html());
-    });
+    const colorPicker = document.querySelector('#colorPicker');
+    
+    const observer = new MutationObserver(observerCallback);
+    const config = { childList: true, subtree: true };
+    observer.observe(colorPicker, config);
 }, 1000);
 $('#ip').click(function(){
     toggleShowIP()
+});
+$(document).ready(function(){
+    $("#footer").html($("#footer").html().replace('{year}', new Date().getFullYear()));
+    ATCOMP.init();
 });

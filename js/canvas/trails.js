@@ -11,8 +11,8 @@ document.getElementById("canvasContainer").appendChild(c);
 // var c = document.getElementById('myCanvas');
 var ctx = c.getContext('2d');
 var dpr = window.devicePixelRatio;
-var cw = window.innerWidth - 500;
-var ch = window.innerHeight - 300;
+var cw = window.innerWidth;
+var ch = window.innerHeight;
 c.width = cw * dpr;
 c.height = ch * dpr;
 ctx.scale(dpr, dpr);
@@ -21,10 +21,6 @@ ctx.lineCap = 'round';
 var orbs = [];
 var orbCount = 30;
 var radius;
-
-// var trailCB = document.getElementById('trail');
-// var trail = trailCB.checked;
-// var clearer = document.getElementById('clear');
 
 function createOrb(mx, my) {
   var dx = (cw / 2) - mx;
@@ -86,8 +82,8 @@ function createOrb(mx, my) {
 }
 
 function orbGo(e) {
-  var mx = e.pageX - c.offsetLeft;
-  var my = e.pageY - c.offsetTop;
+  var mx = e.pageX;
+  var my = e.pageY;
   createOrb(mx, my);
 }
 
@@ -113,7 +109,7 @@ function clear() {
 // trailCB.addEventListener('change', toggleTrails, false);
 // clearer.addEventListener('click', clear, false);
 
-var count = 1000;
+var count = 250;
 while (count--) {
   createOrb(cw / 2, ch / 2 + (count * 2));
 }
