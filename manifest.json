@@ -16,18 +16,8 @@
   "web_accessible_resources": [
     {
       "resources": [
-        "css/*.ttf",
-        "js/custom.min.js",
-        "js/script.min.js",
-        "js/jscolor.min.js",
-        "js/fast.min.js",
-        "js/def-settings-reloader.js",
-        "js/platform.min.js",
-        "js/sortable.min.js",
-        "js/perfect-scrollbar.min.js",
         "js/init.js",
         "js/jquery.js",
-        "js/init.js",
         "js/script.min.js",
         "js/jscolor.min.js",
         "js/custom.min.js",
@@ -49,7 +39,11 @@
       ]
     }
   ],
-  "update_url": "https://clients2.google.com/service/update2/crx",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "hacker-tab@fahadyousafmahar"
+    }
+  },
   "content_security_policy": {
     "extension_pages": "script-src 'self'; object-src 'self'"
   },
