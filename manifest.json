@@ -2,7 +2,7 @@
   "chrome_url_overrides": {
     "newtab": "index.html"
   },
-  "description": "Customizable Hacker Themed New Tab For Chrome",
+  "description": "This extension is a Matrix based animated theme with many search engines producing live search suggestions inside the tab. It adds the hacker look to your Chrome New Tab.\n\nSetting Menu can be accessed by moving cursor to left edge. Matrix can be customized to any colour of your liking through a colour picker. There are Mr. Robot Wallpapers are built in but any other wallpaper can be used from 'Upload Background' button.",
   "icons": {
     "16": "icons/icon16.png",
     "19": "icons/icon19.png",
