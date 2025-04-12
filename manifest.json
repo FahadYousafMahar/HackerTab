@@ -7,7 +7,6 @@
     "16": "icons/icon16.png",
     "19": "icons/icon19.png",
     "48": "icons/icon48.png",
-    "96": "icons/icon96-128.png",
     "128": "icons/icon128.png"
   },
   "manifest_version": 3,
@@ -32,7 +31,9 @@
         "js/canvas/trails.js",
         "js/canvas/nodes.js",
         "js/canvas/nodes2x.js",
-      "js/canvas/circuits.js"
+        "js/canvas/circuits.js",
+        "js/canvas/snow.js",
+        "media/snow.jpg"
       ],
       "matches": [
         "<all_urls>"

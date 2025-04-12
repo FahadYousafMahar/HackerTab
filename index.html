@@ -24,7 +24,6 @@
     <script defer type="application/javascript" src="js/fast.min.js"></script>
 	<script defer type="application/javascript" src="autocomplete/index.js"></script>
     <script defer type="application/javascript" src="js/def-settings-reloader.js"></script>
-
 </head>
 <body id="body">
     <div class="background" id="canvasContainer"></div>
@@ -76,18 +75,21 @@
             </div>
         </div>
         <div id="customMatrix" style="margin-top:10px;">Change Color 
-            <button id="colorPicker" class="btn hollow jscolor">
+            <button id="colorPicker" data-jscolor='{}' class="btn hollow">
                 Change Matrix Color
             </button>
-            <div id="pickerContainer" data-jscolor="{backgroundColor: rgba(255,255,255,1)}"></div>
+            <div id="pickerContainer" data-jscolor='{}'></div>
             <p id="resetColor" class="btn hollow small active">Reset Color</p>
         </div>
         <div id="customAnimations">
             <p id="customAnimationsBtn" class="btn hollow toggle">Change Animation</p>
             <div id="customAnimationsList" class="animations">
+                <span id="matrix" class="btn hollow small reset animationBtn">Matrix</span>
                 <p id="stars" class="btn hollow small animationBtn">Stars</p>
                 <span id="trails" class="btn hollow small animationBtn">Trails</span>
-                <span id="matrix" class="btn hollow small reset animationBtn">Matrix</span>
+                <span id="circuits" class="btn hollow small reset animationBtn">Circuits</span>
+                <span id="nodes" class="btn hollow small reset animationBtn">Nodes</span>
+                <span id="snow" class="btn hollow small reset animationBtn">Snow</span>
             </div>
         </div>
         <div id="customBackgrounds">

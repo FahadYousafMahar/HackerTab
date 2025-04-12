@@ -18,21 +18,21 @@ $( "#leftsidemenu" ).mousemove(function( event ) {
         openNav()
     }
 });
+let last_time = 0;
 const observerCallback = (mutationsList, observer) => {
-    // Loop through all mutations that occurred
     for (let mutation of mutationsList) {
-        if (mutation.type === 'childList' || mutation.type === 'subtree') {
-            updateMatrixColor(colorPicker.innerHTML);
+        if (mutation.type !== 'attributes' && mutation.attributeName !== 'data-current-color') return;
+        let now = new Date().getTime();
+        if (now - last_time > 100) {
+            last_time = now;
+            updateMatrixColor(mutation.target.dataset['currentColor']);
         }
     }
 };
-setTimeout(function() {
-    const colorPicker = document.querySelector('#colorPicker');
-    
-    const observer = new MutationObserver(observerCallback);
-    const config = { childList: true, subtree: true };
-    observer.observe(colorPicker, config);
-}, 1000);
+const colorPicker = document.querySelector('#colorPicker');
+const observer = new MutationObserver(observerCallback);
+const config = { attributes: true };
+observer.observe(colorPicker, config);
 $('#ip').click(function(){
     toggleShowIP()
 });

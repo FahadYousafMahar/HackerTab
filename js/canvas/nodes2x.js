@@ -2,7 +2,7 @@ function randomInt(min,max){
 	return Math.floor(Math.random()*(max-min+1)+min);
 }
 
-var canvas = document.createElement("canvas");;
+var canvas = document.createElement("canvas");
 var ctx = canvas.getContext('2d');
 document.getElementById("canvasContainer").appendChild(canvas);
 
