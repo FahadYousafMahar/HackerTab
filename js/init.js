@@ -38,5 +38,4 @@ $('#ip').click(function(){
 });
 $(document).ready(function(){
     $("#footer").html($("#footer").html().replace('{year}', new Date().getFullYear()));
-    ATCOMP.init();
 });

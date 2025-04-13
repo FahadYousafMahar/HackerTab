@@ -2,6 +2,7 @@
   "chrome_url_overrides": {
     "newtab": "index.html"
   },
+  "permissions": ["search"],
   "description": "This extension is a Matrix based animated theme with many search engines producing live search suggestions inside the tab.",
   "icons": {
     "16": "icons/icon16.png",
@@ -25,7 +26,6 @@
         "js/platform.min.js",
         "js/sortable.min.js",
         "js/perfect-scrollbar.min.js",
-        "autocomplete/index.js",
         "js/canvas/matrix.js",
         "js/canvas/stars.js",
         "js/canvas/trails.js",
@@ -48,7 +48,7 @@
   "content_security_policy": {
     "extension_pages": "script-src 'self'; object-src 'self'"
   },
-  "version": "1.1.0",
+  "version": "1.1.1",
   "action": {
     "default_icon": "icons/icon16.png",
     "default_popup": "/popup.html"
